@@ -10,7 +10,7 @@ function PlantList() {
     .then(plants => setPlants(plants))
     .catch(error => console.error("Error fetching data" ,error))
     }, [])
-  
+  console.log(plants)
   if (!plants) {
     return null; // Return null instead of undefined
   }
