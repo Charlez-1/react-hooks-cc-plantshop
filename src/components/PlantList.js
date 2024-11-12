@@ -5,7 +5,7 @@ function PlantList() {
   const [plants, setPlants] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:6001/plants')
+    fetch('https://react-hooks-cc-plantshop-cdsk.onrender.com/plants')
     .then(response => response.json())
     .then(plants => setPlants(plants))
     .catch(error => console.error("Error fetching data" ,error))
