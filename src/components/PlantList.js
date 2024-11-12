@@ -19,7 +19,7 @@ function PlantList() {
     <div className="row " key={plants.id}> 
       {plants.map((plant) => (
         
-          <div  className="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div>
         <PlantCard   key={plant.id} plant={plant} />
         </div>
 
