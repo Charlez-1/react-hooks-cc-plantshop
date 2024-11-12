@@ -16,10 +16,10 @@ function PlantList() {
   }
   
   return (
-    <div>
+    <div> 
       {plants.map((plant) => (
         
-          <div >
+          <div>
         <PlantCard   key={plant.id} plant={plant} />
         </div>
 

@@ -4,8 +4,8 @@ function PlantCard({ plant }) {
 
 
   return (
-    <li className="card w-50 p-3" data-testid="plant-item" key={plant.id} >
-      <div className="row">  <img src={plant.image} alt={plant.name} />
+    <li className="card" data-testid="plant-item" key={plant.id} >
+      <div className="row w-75">  <img src={plant.image} alt={plant.name} />
       <h4>{plant.name}</h4>
       <p>Price: ${plant.price}</p>
       {plant.inStock ? (
